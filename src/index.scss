@@ -1,0 +1,78 @@
+
+$text: #f0f0f0;
+$background: #2c3e50;
+$session-bg: #1a7c9c;
+$highlight: #bdc3c7;
+$button-bg: #3498db;
+$button-hover: #2980b9;
+$border: #34495e;
+
+.container {
+  color: $text;
+  background-color: $background;
+  text-align: center;
+  padding: 10px;
+}
+
+h1,
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+#session-label,
+#break-label,
+#timer-label {
+  color: $text;
+  background-color: $session-bg;
+  margin: 5px auto;
+  width: 300px;
+  padding: 12px;
+  border-radius: 12px;
+
+  &#timer-label {
+    padding: 4px 12px;
+  }
+}
+
+#time-left {
+  color: $background;
+  background-color: $highlight;
+  margin: 25px 40px;
+  padding: 6px;
+  border-radius: 16px;
+}
+
+span {
+  color: $text;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+button {
+  border-radius: 20px;
+  font-size: 18px;
+  margin: 4px;
+  padding: 10px;
+  border: 2px solid $border;
+  background-color: $button-bg;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+}
+
+#session-label button,
+#break-label button {
+  font-size: 2rem;
+  padding: 0;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
